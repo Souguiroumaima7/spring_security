@@ -1,0 +1,18 @@
+app:
+  name: springboot-jwt-demo
+
+jwt:
+  header: Authorization
+  expires_in: 100000 # 5 minutes
+  mobile_expires_in: 100000 # 60 minutes
+  secret: firstak
+  cookie: AUTH-TOKEN
+#swagger
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: swagger-ui
+#          uri: ${swagger-ui_url}
+#          predicates:
+#            - Path=/swagger-ui/**,/swagger-resources/**,/swagger-ui.html,/v2/api-docs,/webjars/**,/view/**
